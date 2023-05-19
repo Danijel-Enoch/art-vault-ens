@@ -8,6 +8,7 @@ import "bootstrap-icons/font/bootstrap-icons.css"
 import Toast, { POSITION, TYPE } from "vue-toastification";
 import "vue-toastification/dist/index.css";
 import './index.css'
+import 'remixicon/fonts/remixicon.css'
 import { VueDapp } from 'vue-dapp'
 
 const app = createApp(App)

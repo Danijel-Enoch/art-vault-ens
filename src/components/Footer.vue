@@ -1,119 +1,106 @@
 <template>
-  <div class="container-fluid text-center mt-3">
-    <router-link v-if="isActivated && isNetworkSupported" to="/profile">Profile</router-link>
+  <footer class="pt-20">
+    <section class="bg-[#0A0A0A] py-14">
+      <div class="flex flex-col justify-center items-center my-20">
+        <h3 class="text-gray-500 font-extrabold text-center uppercase text-4xl lg:text-6xl font-kinn">Cheetahlab</h3>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:p-0 p-4">
+        <div class="flex flex-col items-start gap-10 ">
+          <h3 class="text-5xl lg:text-6xl xl:text-8xl font-normal text-transparent footer-text font-kinn">Community</h3>
+          <h3 class="text-5xl lg:text-6xl xl:text-8xl font-normal text-transparent footer-text font-kinn">Developers</h3>
+          <h3 class="text-5xl lg:text-6xl xl:text-8xl font-normal text-transparent footer-text font-kinn">Docs</h3>
+          <h3 class="text-5xl lg:text-6xl xl:text-8xl font-normal text-transparent footer-text font-kinn">Contact</h3>
+        </div>
+
+        <div class="flex flex-col justify-start items-start gap-y-6 lg:gap-y-40">
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+            <router-link tag="li" to="#" class="flex justify-center items-center" v-for="(social, i) in socials">
+              <div class="flex items-center gap-3">
+                  <i :class="[social.icon, iconClass]"></i>
+                  <span class="text-white text-lg font-kinn font-semibold">{{ social.title }}</span>
+              </div>
+            </router-link>
+          </div>
+
+          <div class="flex flex-col">
+            <router-link tag="li" to="#" class="flex gap-3 w-60 bg-gray-100 rounded-lg p-2 text-black hover:bg-gray group">
+              <span class="uppercase font-kinn text-lg font-medium text-black">Dev Relations</span>
+              <i class="ri-arrow-right-line text-xl text-black font-medium"></i>
+            </router-link>
+          </div>
+
+          <div class="flex flex-col">
+            <i class="ri-link bg-gray-100 p-1 rounded-md w-8 text-center"></i>
+          </div>
+
+          <div class="flex gap-2">
+            <i class="ri-mail-fill text-white text-xl"></i>
+            <span class="text-white font-kinn">hello@cheetahlab.io</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="py-3">
+      <div class="flex lg:justify-between justify-center items-center lg:flex-row flex-col flex-wrap lg:flex-nowrap">
+          <div class="flex items-center">
+            <h4 class="text-white font-medium text-sm font-kinn">Cheetahlabs.Copyright. &copy; {{ getDate }}</h4>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <router-link tag="li" class="text-white text-sm font-medium font-kinn" to="#">Terms</router-link>
+            <router-link tag="li" class="text-white text-sm font-medium font-kinn" to="#">Privacy Policy</router-link>
+          </div>
+      </div>
+    </section>
     
-    <span v-if="isActivated && isNetworkSupported"> | </span>
-
-    <router-link to="/about">About</router-link>
-    
-    <span> | </span>
-
-    <router-link to="/how">How it works</router-link>
-    
-    <span> | </span>
-
-    <router-link to="/partners/l2dao">L2DAO</router-link>
-
-    <!--<span> | </span><router-link to="/partners/wildbunch">Wild Bunch</router-link>
-    
-    <span> | </span>
-
-    <router-link to="/browser">Browser extension</router-link>-->
-
-    <span> | </span>
-
-    <router-link to="/punkangel">Punk Angel</router-link>
-    
-    <span> | </span>
-
-    <a target="_blank" href="https://blog.punk.domains">Blog</a> 
-    
-    <span> | </span>
-
-    <a target="_blank" href="https://github.com/punk-domains/brand-identity">Brand identity</a> 
-
-    <span> | </span>
-
-    <a target="_blank" href="https://punk-domains.4everland.app">Mirror site</a> 
-
-    <span> | </span>
-
-    <a target="_blank" href="https://github.com/orgs/punk-domains/discussions/1">Contribute</a> 
-  
-  </div>
-
-  <div class="container-fluid text-center">
-
-    <a class="icons" href="http://docs.punk.domains" target="_blank"><i class="bi bi-journal-text"></i></a>
-
-    <a class="icons" target="_blank" href="https://github.com/punk-domains"><i class="bi bi-github"></i></a>
-
-    <a class="icons" target="_blank" href="https://discord.gg/8dSrwrAQeu"><i class="bi bi-discord"></i></a>
-
-    <a class="icons" target="_blank" href="https://twitter.com/PunkDomains"><i class="bi bi-twitter"></i></a>
-
-    <a class="icons" href="http://blog.punk.domains" target="_blank"><i class="bi bi-pencil-square"></i></a>
-    
-  </div>
-
-  <div class="container-fluid text-center">
-    <a href="https://alchemy.com/?r=DA1NzIxNDk3NDA4N" target="_blank">
-      <img id="badge-button" style="height:43px" src="https://static.alchemyapi.io/images/marketing/badge.png" alt="Alchemy Supercharged" />
-    </a>
-  </div>
+  </footer>
 </template>
 
 <script>
-import { useEthers } from 'vue-dapp';
-import { mapGetters } from 'vuex';
+  export default {
+    name: "Footer",
+    data() {
+      return {
+        iconClass: "text-xl text-white font-bold",
+        socials: [
+          {
+            icon: "ri-medium-fill",
+            title: "Medium",
+          },
 
-export default {
-  name: "Footer",
+          {
+            icon: "ri-telegram-fill",
+            title: "Telegram",
+          },
 
-  computed: {
-    ...mapGetters("network", ["isNetworkSupported"]),
-    
-  },
+          {
+            icon: "ri-twitter-fill",
+            title: "Twitter",
+          },
 
-  setup() {
-    const { isActivated } = useEthers()
-    return { isActivated }
-  },
-}
+          {
+            icon: "ri-discord-fill",
+            title: "Discord",
+          },
+        ]
+      }
+    },
+
+    computed: {
+      getDate() {
+        return new Date().getFullYear();
+      }
+    }
+
+  }
+
 </script>
 
 <style scoped>
-a {
-  text-decoration: none;
-}
+  .footer-text {
+    -webkit-text-stroke: 0.4px rgba(255,255,255,0.5);
+  }
 
-a:hover {
-  text-decoration: underline;
-}
-
-.container-fluid {
-  /*background-color: #24263A;*/
-  background-color: transparent;
-  padding: 20px 0px;
-  border-radius: 10px;
-}
-
-.icons {
-  margin-left: 15px;
-  margin-right: 15px;
-  font-size: 2em;
-}
-
-.polygon {
-  vertical-align: text-bottom;
-  width: 40px;
-}
-
-.polygon svg circle {
-  fill: #fff;
-}
-
-.polygon:hover svg circle {
-  fill: white;
-}
 </style>

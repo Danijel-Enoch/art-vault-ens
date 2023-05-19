@@ -9,29 +9,29 @@
 
     <hr />
 
-    <router-link class="btn btn-sidebar text-start" to="/profile">
+    <router-link class="btn btn-sidebar text-black  text-start" to="/profile">
       <i class="bi bi-person"></i> Profile
     </router-link>
 
-    <router-link class="btn btn-sidebar text-start" to="/">
+    <router-link class="btn btn-sidebar text-black  text-start" to="/">
       <i class="bi bi-cart4"></i> Buy domain
     </router-link>
 
-    <router-link class="btn btn-sidebar text-start" to="/search-domain">
+    <router-link class="btn btn-sidebar text-black  text-start" to="/search-domain">
       <i class="bi bi-search"></i> Search domain
     </router-link>
 
-    <router-link class="btn btn-sidebar text-start" to="/profile/send-tokens">
+    <router-link class="btn btn-sidebar text-black text-start" to="/profile/send-tokens">
       <i class="bi bi-send"></i> Send tokens
     </router-link>
 
-    <router-link class="btn btn-sidebar text-start" to="/tlds">
+    <router-link class="btn btn-sidebar text-black text-start" to="/tlds">
       <i class="bi bi-align-top"></i> TLDs
     </router-link>
 
-    <router-link class="btn btn-sidebar text-start" to="/browser">
+    <!-- <router-link class="btn btn-sidebar text-black  text-start" to="/browser">
       <i class="bi bi-window-plus"></i> Browser extension
-    </router-link>
+    </router-link> -->
 
     <!--
     <router-link class="btn btn-sidebar text-start" to="/buy-tld">

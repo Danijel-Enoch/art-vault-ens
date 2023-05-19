@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 @font-face { 
   font-family: "Cyber";
@@ -9,21 +15,29 @@
   font-family: "Impact";
   src: url("assets/font/impact.ttf"); 
 }
+@font-face { 
+  font-family: "Kinn";
+  src: url("assets/angels/Kinn-Book.ttf"); 
+}
+@font-face { 
+  font-family: "KinnLight";
+  src: url("assets/angels/Kinn-ExtraLight.ttf"); 
+}
 
 a {
-  color: #fff;
+  color: #000;
 }
 
 a:hover {
-  color: #ffffff;
+  color: #000;
 }
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Poppins', sans-serif;
   /*background: linear-gradient(90deg, hsla(265, 75%, 26%, 1) 0%, hsla(365, 75%, 26%, 1) 100%);*/
-  background: linear-gradient(90deg, #4443f1 0%, #9055f7 100%);
+  background: linear-gradient(90deg, #000000 0%, #000000 100%);
   /*background: linear-gradient(90deg, #3b1eca 0%, #793ac7 100%);*/
-  color: #fff;
+  color: #000;
 }
 
 p {
@@ -40,14 +54,14 @@ hr {
 
 .btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:disabled {
   background: transparent;
-  border-color: #fff;
+  border-color: #7200F7;
   box-shadow: none;
-  color: #fff;
+  color: #000;
 }
 
 .btn-primary:hover {
   color: black;
-  border-color: #ffffff;
+  border-color: #7200F7;
   background: #ffffff;
 }
 
@@ -60,7 +74,7 @@ hr {
 
 .btn-secondary:hover {
   color: black;
-  border-color: #ffffff;
+  border-color: #7200F7;
   background: #ffffff;
 }
 
@@ -68,19 +82,24 @@ hr {
   background: transparent;
   padding: 20px;
   border-radius: 10px;
-  border: 1px solid #fff;
+  border: 1px solid #7200F7;
 }
 
 .img-thumbnail {
   background-color: transparent;
 }
+h3{
+  color: white;
+}
 
 .modal-content {
   color: black;
 }
-
+.text-black{
+  color: black;
+}
 .span-link:hover {
-  color: white;
+  color: black;
   text-decoration: none;
   cursor: pointer;
 }
@@ -104,5 +123,38 @@ hr {
 @media only screen and (max-width: 767px) {
   #sidebar-container {
     margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+  .text-size{
+    font-size: 40px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .text-size{
+    font-size: 50px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .text-size{
+font-size: 58px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .text-size{
+    font-size: 58px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .text-size{
+    font-size: 58px;
   }
 }
