@@ -51,7 +51,9 @@
     ".zksoul": "0xe36507aD67Ac0aE6D27D22b407A9338b136315df"
   },
   "4002": {
-    ".testfantom": "0xbdacf94ddcab51c39c2dd50bffee60bb8021949a"
+    ".testfantom": "0xbdacf94ddcab51c39c2dd50bffee60bb8021949a",
+    ".tftm":"0x90A9e83368AEFA29b02b3389a185325CDFcC3909"
+    
   },
   "80001": {
     ".testsafu": "0x755F461d6a5854203b9B30C76f680356cC67556D",
@@ -80,5 +82,12 @@
   },
   "1313161555": {
     ".testrora": "0x4087fb91a1fbdef05761c02714335d232a2bf3a1"
+  },
+  "1115":{
+    ".core":"0x5c8d986b1254063f79F38eEc0246a975618FA221"
+  }, "943":{
+    ".pls":"0xbe3449b085cd5c1e957C407b771F05896ed8D169",
+    ".pulse":"0xCFCDe63463b273CbcdD1D74f8AC968064f8b464F",
+    ".pepe":"0x217d9cFeB40Bb3d2187f67E77f0747eaBb56DA88"
   }
 }

@@ -15,7 +15,9 @@ export default {
       100: "Gnosis Chain",
       137: "Polygon",
       42161: "Arbitrum",
-      56: "BNB Smart Chain"
+      56: "BNB Smart Chain",
+      1115:"Core Testnet",
+      943:"Pulse Testnet",
     }
   }),
 
@@ -53,6 +55,10 @@ export default {
         return "https://testnet.arbiscan.io";
       } else if (chainId.value === 1313161555) {
         return "https://testnet.aurorascan.dev";
+      } else if (chainId.value === 1115) {
+        return "https://scan.test.btcs.network/";
+      } else if (chainId.value === 943) {
+        return "https://scan.v4.testnet.pulsechain.com/";
       }
     },
 
@@ -89,6 +95,10 @@ export default {
         return "https://testnet.arbiscan.io";
       } else if (netId === 1313161555) {
         return "https://testnet.aurorascan.dev";
+      } else if (netId === 1115) {
+        return "https://scan.test.btcs.network/";
+      }else if (netId === 943) {
+        return "https://scan.v4.testnet.pulsechain.com/";
       }
     },
     
@@ -180,6 +190,16 @@ export default {
         // Aurora testnet
         urls = [
           "https://testnet.aurora.dev"
+        ];
+      }else if (networkId === 1115) {
+        // Aurora testnet
+        urls = [
+          "https://rpc.test.btcs.network"
+        ];
+      }else if (networkId === 943) {
+        // Aurora testnet
+        urls = [
+          "wss://rpc.v4.testnet.pulsechain.com"
         ];
       }
 
@@ -288,7 +308,13 @@ export default {
       } else if (chainId.value === 1313161555) {
         state.networkName = "Aurora Testnet";
         state.networkCurrency = "ETH";
-      } else {
+      } else if (chainId.value === 1115) {
+        state.networkName = "Core Testnet";
+        state.networkCurrency = "Core";
+      } else if (chainId.value === 943) {
+        state.networkName = "PulseChain Testnet v4";
+        state.networkCurrency = "PLS";
+      }else {
         state.networkName = "Unsupported Network";
         state.networkCurrency = "ETH";
       }
