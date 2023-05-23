@@ -1,6 +1,6 @@
 <template>
 
-  <div class="row">
+  <div class="row text-white">
     <div class="col-md-3" id="sidebar-container">
       <Sidebar />
     </div>
@@ -11,8 +11,8 @@
       <div class="row" v-if="!isActivated">
         <div class="col-md-12 mb-3">
           <div class="container text-center">
-            <h3><i class="bi bi-exclamation-triangle"></i> Not connected <i class="bi bi-exclamation-triangle"></i></h3>
-            <p class="text-break">
+            <h3><i class="bi bi-exclamation-triangle text-white"></i> Not connected <i class="bi bi-exclamation-triangle"></i></h3>
+            <p class="text-break text-white">
               Please connect with your wallet to see your profile data.
             </p>
           </div>
@@ -24,14 +24,14 @@
         <div class="col-md-6 mb-3">
           <div class="container text-center">
             <h3>Address</h3>
-            <p class="text-break">{{getUserAddress}}</p>
+            <p  class="text-break text-white">{{getUserAddress}}</p>
           </div>
         </div>
 
         <div class="col-md-6 mb-3">
           <div class="container text-center">
             <h3>Balance</h3>
-            <p class="text-break">{{ getUserBalance }} {{getNetworkCurrency}}</p>
+            <p class="text-break text-white">{{ getUserBalance }} {{getNetworkCurrency}}</p>
           </div>
         </div>
       </div>
@@ -52,13 +52,13 @@
             </div>
 
             <p v-if="getUserSelectedNameData">
-              <small><em>
+              <small class="text-white"><em>
                 Don't see your domain here? 
-                <span class="span-link" data-bs-toggle="modal" data-bs-target="#addDomainModal">
+                <span class="span-link text-white" data-bs-toggle="modal" data-bs-target="#addDomainModal">
                   Add it manually</span>.
               </em></small>
             </p>
-            <p v-else>
+            <p class="text-white" v-else>
               No domain? No worries, <router-link to="/">buy yourself one here!</router-link>
             </p>
           </div>
@@ -71,16 +71,16 @@
   </div>
 
   <!-- Add Domain Modal -->
-  <div class="modal fade" id="addDomainModal" tabindex="-1" aria-labelledby="addDomainModalLabel" aria-hidden="true" modal-dialog-centered>
+  <div class="modal fade text-white" id="addDomainModal" tabindex="-1" aria-labelledby="addDomainModalLabel" aria-hidden="true" modal-dialog-centered>
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="addDomainModalLabel">Add your existing domain</h5>
+          <h5 class="modal-title text-white" id="addDomainModalLabel">Add your existing domain</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Enter your existing domain:</label>
+            <label for="recipient-name" class="col-form-label text-white">Enter your existing domain:</label>
             <input type="text" class="form-control" id="recipient-name" v-model="existingDomain">
             <small><em>No transaction will be made, this is a free query.</em></small>
           </div>
@@ -215,5 +215,11 @@ export default {
   /*--bs-table-hover-bg: #1D1E2C;*/
   --bs-table-hover-bg: transparent;
   --bs-table-hover-color: none;
+}
+.text-white{
+  color: #fff;
+}
+*{
+  color: white !important;
 }
 </style>
