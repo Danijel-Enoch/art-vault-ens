@@ -65,7 +65,7 @@
       Domain price: {{ this.parseValue(this.selectedPrice) }} {{ getNetworkCurrency }}
     </p>
 
-    <button class="btn text-white btn-primary btn-lg mt-1 buy-button" @click="buyDomain"
+    <button class="btn text-white btn-primary btn-lg mt-1 buy-button hover:!bg-purple-500 hover:!text-white" @click="buyDomain"
       :disabled="waiting || buyNotValid(chosenDomainName).invalid">
       <span v-if="waiting" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
       Buy domain
