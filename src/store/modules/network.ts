@@ -11,6 +11,8 @@ export default {
 		networkCurrency: "ETH",
 		networkName: "Unsupported Network",
 		supportedNetworks: {
+			1: "Ethereum Mainnet",
+			5: "Ethereum Goerli Testnet",
 			10: "Optimism",
 			100: "Gnosis Chain",
 			137: "Polygon",

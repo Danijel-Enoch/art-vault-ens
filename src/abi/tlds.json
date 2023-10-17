@@ -1,6 +1,6 @@
 {
 	"1": {
-		".wildbunch": "0xaa9E5Ade68C9C3Ea967Dc5dde731fd1f797152Cb"
+		".eav": "0x5d608c48EFE54a19dfb3c77d78863587f797eFAE"
 	},
 	"10": {
 		".wagmi": "0xC3E8922657686EC63eaaa9FC1Fe06826802e7e0f",
@@ -97,6 +97,7 @@
 		".kava": "0x2BCA714A0304202A92f0b4d8f10301eF89253cd5"
 	},
 	"5": {
-		".eav": "0x5d608c48EFE54a19dfb3c77d78863587f797eFAE"
+		".eav": "0x5d608c48EFE54a19dfb3c77d78863587f797eFAE",
+		".degen": "0xc2DB399bA81304556BFc0B563892032434f5aB53"
 	}
 }
