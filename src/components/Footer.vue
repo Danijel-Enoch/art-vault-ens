@@ -14,13 +14,13 @@
 
         <div class="flex flex-col justify-start items-start gap-y-6 lg:gap-y-40">
           <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
-            <router-link tag="li" to="#" class="flex justify-center items-center" v-for="(social, i) in socials">
+            <a tag="li" :href="social.link" class="flex justify-center items-center" v-for="(social, i) in socials">
               <div class="flex items-center gap-3">
-                 <a :href="[social.link]"> <i :class="[social.icon, iconClass]"></i>
+                  <i :class="[social.icon, iconClass]"></i>
                   <span class="text-white text-lg font-kinn font-semibold">{{ social.title }}</span>
-                 </a>
+                
               </div>
-            </router-link>
+            </a>
           </div>
 
           <div class="flex flex-col">
@@ -67,12 +67,6 @@
         iconClass: "text-xl text-white font-bold",
         socials: [
           {
-            icon: "ri-medium-fill",
-            title: "Medium",
-            link:"##"
-          },
-
-          {
             icon: "ri-telegram-fill",
             title: "Telegram",
             link:"https://t.me/EnsArtVault_ERC"
@@ -82,13 +76,7 @@
             icon: "ri-twitter-fill",
             title: "Twitter",
             link:"https://twitter.com/EnsArtVault"
-          },
-
-          {
-            icon: "ri-discord-fill",
-            title: "Discord",
-            link:"#"
-          },
+          } 
         ]
       }
     },
