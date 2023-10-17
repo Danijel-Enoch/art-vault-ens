@@ -42,7 +42,7 @@
         background: rgba(199, 139, 139, 0.1);
         background-clip: padding-box;
         border-image-slice: 1;
-        border-image-source: linear-gradient(90.91deg, #7200F7 8.07%, #F70085 47.44%);
+        border-image-source: linear-gradient(90.91deg, #9CA3AF 8.07%, #F70085 47.44%);
         border-radius: 0.5rem;
     }
 
