@@ -38,6 +38,8 @@ export default function useChainHelpers() {
 			return " Kava EVM Testnet";
 		} else if (chainId === 2222) {
 			return " Kava EVM Mainnet";
+		} else if (chainId === 5) {
+			return " Ethereum  Goerli Testnet";
 		} else {
 			return "Unsupported Network";
 		}
@@ -110,6 +112,11 @@ export default function useChainHelpers() {
 		} else if (networkId === 2222) {
 			// Aurora testnet
 			urls = [" https://evm.kava.io"];
+		} else if (networkId === 5) {
+			// Aurora testnet
+			urls = [
+				"https://goerli.infura.io/v3/9e9e77871cc04dc182dac2b47f6b0b44",
+			];
 		}
 
 		if (urls) {

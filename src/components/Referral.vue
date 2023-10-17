@@ -12,8 +12,8 @@
           <div class="col-md-6 offset-md-3">
             <input 
               class="form-control text-center clipboard"
-              :value="'https://domains.cheetahlabs.io/#/'+getUrlPath+'?ref=' + this.getNameOrAddress"
-              @click="copyToClipboard('https://domains.cheetahlabs.io/#/'+getUrlPath+'?ref=' + this.getNameOrAddress)"
+              :value="'http://www.ensartvault.com/#/'+getUrlPath+'?ref=' + this.getNameOrAddress"
+              @click="copyToClipboard('http://www.ensartvault.com/#/'+getUrlPath+'?ref=' + this.getNameOrAddress)"
               readonly
             >
           </div>
