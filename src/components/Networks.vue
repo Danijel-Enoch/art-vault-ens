@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="flex justify-center items-center gap-4">
+        <!-- <div class="flex justify-center items-center gap-4">
             <h3 class="font-bold text-3xl lg:text-5xl font-kinn">Integrated</h3>
             <h3 class="font-bold text-3xl lg:text-5xl font-kinn text-purple-800">Networks</h3>
         </div>
@@ -10,7 +10,7 @@
                 <img :src="network.image" :alt="network.title" class="w-20 h-20">
                 <h5 class="font-kinn font-semibold text-sm text-white">{{ capitalize(network.title) }}</h5>
             </div>
-        </div>
+        </div> -->
     </section>
 
 </template>

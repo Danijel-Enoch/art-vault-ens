@@ -3,7 +3,7 @@
   <nav class="navbar-dark  navbar navbar-expand-lg ">
     <div class="container-fluid">
       <router-link to="/" class="navbar-brand">
-        <img src="https://res.cloudinary.com/daniel23/image/upload/v1683772491/main-logo_kr5qrb.png" alt="" width="200"
+        <img src="https://res.cloudinary.com/daniel23/image/upload/v1697459024/WhatsApp_Image_2023-10-16_at_11.50.22-removebg-preview_wbjswo.png" alt="" width="90"
           class="d-inline-block navbar-img img-fluid">
       </router-link>
 
@@ -148,7 +148,7 @@ export default {
 }
 
 .cht-button {
-  background: #7200F7;
+  background: #9CA3AF;
 
   /* Grey/White */
   border: 1px solid #FFFFFF;
@@ -157,7 +157,7 @@ export default {
 }
 
 .cht-button-list {
-  background: #7200F7;
+  background: #9CA3AF;
 
   /* Grey/White */
   border: 1px solid #FFFFFF;

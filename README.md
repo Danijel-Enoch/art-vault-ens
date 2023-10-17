@@ -1,6 +1,6 @@
-# CheetahLab Domains frontend
+# Ens Art Vault Domains frontend
 
-CheetahLab Domains - Web3 Domains for DAOs
+Ens Art Vault Domains - Web3 Domains for DAOs
 
 
 ## Quickstart

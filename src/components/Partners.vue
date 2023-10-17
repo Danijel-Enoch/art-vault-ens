@@ -8,7 +8,7 @@
         <div class="py-6">
             <div v-if="!isMobile" class="lg:max-w-[80%] lg:mx-auto grid grid-cols-1 lg:grid-cols-4 gap-4">
                 <div class="border-[1px] border-white rounded-3xl p-3 flex flex-col justify-center items-center" v-for="i in 12" :key="i">
-                    <img src="https://res.cloudinary.com/daniel23/image/upload/v1683772491/main-logo_kr5qrb.png">
+                    <img src="https://res.cloudinary.com/daniel23/image/upload/v1697459024/WhatsApp_Image_2023-10-16_at_11.50.22-removebg-preview_wbjswo.png">
                 </div>
             </div>
 
@@ -22,7 +22,7 @@
 
                     <swiper-slide v-for="i in 12" :key="i">
                         <div class="border-[1px] border-white rounded-3xl p-3 flex flex-col justify-center items-center" >
-                            <img src="https://res.cloudinary.com/daniel23/image/upload/v1683772491/main-logo_kr5qrb.png">
+                            <img src="https://res.cloudinary.com/daniel23/image/upload/v1697459024/WhatsApp_Image_2023-10-16_at_11.50.22-removebg-preview_wbjswo.png">
                         </div>
                     </swiper-slide>
             </swiper>

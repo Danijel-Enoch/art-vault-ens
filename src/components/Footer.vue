@@ -2,7 +2,7 @@
   <footer class="pt-20">
     <section class="bg-[#0A0A0A] py-14">
       <div class="flex flex-col justify-center items-center my-20">
-        <h3 class="text-gray-500 font-extrabold text-center uppercase text-4xl lg:text-6xl font-kinn">Cheetahlab</h3>
+        <h3 class="text-gray-500 font-extrabold text-center uppercase text-4xl lg:text-6xl font-kinn">Ens Art Vault</h3>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:p-0 p-4">
         <div class="flex flex-col items-start gap-10 ">
@@ -16,8 +16,9 @@
           <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
             <router-link tag="li" to="#" class="flex justify-center items-center" v-for="(social, i) in socials">
               <div class="flex items-center gap-3">
-                  <i :class="[social.icon, iconClass]"></i>
+                 <a :href="[social.link]"> <i :class="[social.icon, iconClass]"></i>
                   <span class="text-white text-lg font-kinn font-semibold">{{ social.title }}</span>
+                 </a>
               </div>
             </router-link>
           </div>
@@ -35,7 +36,7 @@
 
           <div class="flex gap-2">
             <i class="ri-mail-fill text-white text-xl"></i>
-            <span class="text-white font-kinn">hello@cheetahlab.io</span>
+            <span class="text-white font-kinn">hello@EnsArtVault.io</span>
           </div>
 
         </div>
@@ -45,7 +46,7 @@
     <section class="py-3">
       <div class="flex lg:justify-between justify-center items-center lg:flex-row flex-col flex-wrap lg:flex-nowrap">
           <div class="flex items-center">
-            <h4 class="text-white font-medium text-sm font-kinn">Cheetahlabs.Copyright. &copy; {{ getDate }}</h4>
+            <h4 class="text-white font-medium text-sm font-kinn">Ens Art Vault.Copyright. &copy; {{ getDate }}</h4>
           </div>
 
           <div class="flex items-center gap-4">
@@ -68,21 +69,25 @@
           {
             icon: "ri-medium-fill",
             title: "Medium",
+            link:"##"
           },
 
           {
             icon: "ri-telegram-fill",
             title: "Telegram",
+            link:"https://t.me/EnsArtVault_ERC"
           },
 
           {
             icon: "ri-twitter-fill",
             title: "Twitter",
+            link:"https://twitter.com/EnsArtVault"
           },
 
           {
             icon: "ri-discord-fill",
             title: "Discord",
+            link:"#"
           },
         ]
       }

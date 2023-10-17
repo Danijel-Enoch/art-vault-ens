@@ -4,11 +4,11 @@
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 justify-center items-center lg:m-0 my-10">
       <div class="lg:col-span-2 flex lg:flex-row flex-col justify-between items-start gap-4">
         <div class="hidden lg:flex flex-col justify-start items-start gap-6">
-          <h3 class="domains" style="color:#F5AD64;">.core</h3>
-          <h3 class="domains" style="color:#00FB19;">.zeta</h3>
-          <h3 class="domains" style="color:#E7B9FF;">.caduceus</h3>
-          <h3 class="domains" style="color:#7200F7;">.cheetah</h3>
-          <h3 class="domains" style="color:#F5AD64;">.tcore</h3>
+          <h3 class="domains" style="color:#F5AD64;">.btc</h3>
+          <h3 class="domains" style="color:#00FB19;">.shiba</h3>
+          <h3 class="domains" style="color:#E7B9FF;">.pepe</h3>
+          <h3 class="domains" style="color:#9CA3AF;">.</h3>
+          <h3 class="domains" style="color:#F5AD64;">.dorky</h3>
           <h3 class="domains" style="color:#ffff;">.dns</h3>
           <h3 class="domains" style="color:#F1392B;">.partner</h3>
         </div>
@@ -16,7 +16,7 @@
 
         <div class="flex flex-col justify-center lg:justify-start lg:items-start items-center gap-2 lg:gap-4">
           <h1 class="!text-4xl font-bold sm:!text-6xl lg:!text-7xl xl:text-8xl text-white font-kinn">Your Global</h1>
-          <h1 class="!text-4xl sm:!text-6xl lg:!text-7xl xl:text-8xl !text-purple-700 font-poppins font-bold">Domain Name
+          <h1 class="!text-4xl sm:!text-6xl lg:!text-7xl xl:text-8xl !text-gray-400 font-poppins font-bold">Domain Name
           </h1>
           <h1 class="!text-4xl sm:!text-6xl lg:!text-7xl xl:text-8xl text-white font-kinn font-bold">Provider</h1>
           <p class="text-sm text-white">Establishing your identity in a permissionless and censorship-resistant way using
@@ -27,7 +27,7 @@
 
       <div class="lg:col-span-1 flex flex-col justify-center items-center ">
         <img style="width: 509px; height: 524px;"
-          src="https://res.cloudinary.com/daniel23/image/upload/v1683626678/Group_176_1_1_ueq5tc.png" alt=""
+          src="https://res.cloudinary.com/daniel23/image/upload/v1697459024/WhatsApp_Image_2023-10-16_at_11.50.22-removebg-preview_wbjswo.png" alt=""
           class="d-inline-block navbar-img">
       </div>
     </div>
@@ -439,7 +439,7 @@ export default {
 .card {
   background-color: black;
   border-radius: 10px;
-  border: 1px solid #7200F7;
+  border: 1px solid #9CA3AF;
   color: white;
   padding: 20px;
   margin: 15px;
@@ -473,7 +473,7 @@ export default {
 .info-card {
   background: rgba(217, 217, 217, 0.1);
   border: 1px solid;
-  border-color: #7200F7;
+  border-color: #9CA3AF;
 }
 
 /* .font-kinn{

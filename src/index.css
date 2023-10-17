@@ -56,14 +56,14 @@ hr {
 
 .btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:disabled {
   background: transparent;
-  border-color: #7200F7;
+  border-color: #9CA3AF;
   box-shadow: none;
   color: #000;
 }
 
 .btn-primary:hover {
   color: black;
-  border-color: #7200F7;
+  border-color: #9CA3AF;
   background: #ffffff;
 }
 
@@ -76,7 +76,7 @@ hr {
 
 .btn-secondary:hover {
   color: black;
-  border-color: #7200F7;
+  border-color: #9CA3AF;
   background: #ffffff;
 }
 
@@ -84,7 +84,7 @@ hr {
   background: transparent;
   padding: 20px;
   border-radius: 10px;
-  border: 1px solid #7200F7;
+  border: 1px solid #9CA3AF;
 }
 
 .img-thumbnail {
