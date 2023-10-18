@@ -142,7 +142,7 @@ export default {
 
     setContract() {
       let tldAddresses = this.getTldAddresses;
-
+      console.log({tldAddresses})
       if (tldAddresses && JSON.stringify(tldAddresses) != "{}") {
         const tldAddr = tldAddresses["."+this.tld];
 

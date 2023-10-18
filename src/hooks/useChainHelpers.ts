@@ -136,6 +136,23 @@ export default function useChainHelpers() {
 		if (networkName == "Ethereum") {
 			method = "wallet_switchEthereumChain";
 			params = [{ chainId: "0x1" }];
+		} else if (networkName == "Ethereum Goerli Testnet") {
+			method = "wallet_addEthereumChain";
+			params = [
+				{
+					blockExplorerUrls: ["https://goerli.etherscan.com"],
+					chainId: "0x5",
+					chainName: "Ethereum Goerli Testnet",
+					nativeCurrency: {
+						decimals: 18,
+						name: "ETH",
+						symbol: "ETH",
+					},
+					rpcUrls: [
+						"https://goerli.infura.io/v3/9e9e77871cc04dc182dac2b47f6b0b44",
+					],
+				},
+			];
 		} else if (networkName == "Polygon Testnet") {
 			method = "wallet_addEthereumChain";
 			params = [

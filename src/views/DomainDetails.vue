@@ -17,11 +17,11 @@
             </div>
 
             <div class="mb-3 row domain-data mt-4" v-if="domainData">
-              <div class="col-sm-3 punk-title">
+              <div class="col-sm-3 punk-title text-white">
                 Holder address
               </div>
 
-              <div class="col-sm-9 punk-text text-break">
+              <div class="col-sm-9 punk-text text-white text-break">
                 {{holderData}}
                 <a :href="getBlockExplorerBaseUrlFromId(Number(this.domainChain))+'/address/'+holderData" target="_blank">
                   <i class="bi bi-box-arrow-up-right"></i>
@@ -30,17 +30,17 @@
             </div>
 
             <div class="mb-3 row domain-data mt-4">
-              <div class="col-sm-3 punk-title">
+              <div class="col-sm-3 punk-title text-white">
                 Network
               </div>
 
-              <div class="col-sm-9 punk-text text-break">
+              <div class="col-sm-9 punk-text text-white text-break">
                 {{getChainName(Number(domainChain))}} (this is where domain is registered)
               </div>
             </div>
 
-            <!--
-            <EditUrl 
+            
+            <!-- <EditUrl 
               :domainData="domainData" 
               :tld="tld" 
               :domainName="domainName" 
@@ -52,8 +52,8 @@
               :tld="tld" 
               :domainName="domainName" 
               @fetchData="fetchData"  
-            />
-            -->
+            /> -->
+           
 
             <EditOtherData
               :domainData="domainData" 

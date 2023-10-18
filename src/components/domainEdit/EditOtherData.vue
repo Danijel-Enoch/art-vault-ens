@@ -13,7 +13,7 @@
 
   <button 
     v-if="isOwner && isCorrectChainForDomain"
-    class="btn btn-primary btn-lg mx-3 mt-3"
+    class="btn btn-primary btn-lg mx-3 mt-3 text-white"
     data-bs-toggle="modal" data-bs-target="#editDataModal"
   >
     Edit data

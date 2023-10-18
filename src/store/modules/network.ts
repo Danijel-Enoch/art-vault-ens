@@ -126,8 +126,11 @@ export default {
 				urls = ["https://rpc.ankr.com/eth"];
 			} else if (networkId === 3) {
 				// Ropsten testnet
-			} else if (networkId === 4) {
+			} else if (networkId === 5) {
 				// Rinkeby testnet
+				urls = [
+					"https://goerli.infura.io/v3/9e9e77871cc04dc182dac2b47f6b0b44",
+				];
 			} else if (networkId === 10) {
 				// Optimism
 				urls = ["https://rpc.ankr.com/optimism"];
@@ -311,6 +314,9 @@ export default {
 			} else if (chainId.value === 2222) {
 				state.networkName = "KAVA EVM Mainnet";
 				state.networkCurrency = "Kava";
+			} else if (chainId.value === 5) {
+				state.networkName = "Ethereum Goerli Testnet";
+				state.networkCurrency = "Eth";
 			} else {
 				state.networkName = "Unsupported Network";
 				state.networkCurrency = "ETH";
