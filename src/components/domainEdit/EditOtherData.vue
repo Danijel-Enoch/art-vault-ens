@@ -9,6 +9,11 @@
       <span v-else-if="dataKey=='twitter'"><a target="_blank" :href="getTwitterUrl(dataValue)">{{dataValue}}</a></span>
       <span v-else>{{dataValue}}</span>
     </div>
+    <div class="col-sm-9 punk-text text-break">
+      <span v-if="dataKey=='url'"><a target="_blank" :href="dataValue">{{dataValue}}</a></span>
+      <span v-else-if="dataKey=='telegram'"><a target="_blank" :href="setTelegram(dataValue)">{{dataValue}}</a></span>
+      <span v-else>{{dataValue}}</span>
+    </div>
   </div>
 
   <button 
@@ -206,6 +211,11 @@ export default {
         }
       }
     },
+    setTelegram(entry){
+      if (typeof entry === 'string') {
+      return entry
+      }
+    },
 
     setContract() {
       let tldAddresses = this.getTldAddresses;
@@ -257,6 +267,9 @@ export default {
 
       if(this.fields.findIndex(x => x.dataKey == "twitter") === -1) {
         this.fields.push({dataKey: "twitter", dataValue: "", valuePlaceholder: "Enter your Twitter handle"});
+      }
+      if(this.fields.findIndex(x => x.dataKey == "telegram") === -1) {
+        this.fields.push({dataKey: "telegram", dataValue: "", valuePlaceholder: "Enter your Telegram username"});
       }
 
       if (this.isOwner && this.isCorrectChainForDomain) {
